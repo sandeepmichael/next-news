@@ -4,7 +4,7 @@ import styles from '../../styles/Feed.module.css';
 import { Toolbar } from '../../components/toolbar';
 import axios from 'axios';
 
-export const Feed = ({ articles, pageNumber }) => {
+export const  Feed = ({ articles, pageNumber }) => {
   const router = useRouter();
   return articles.length ? (
     <>
@@ -105,4 +105,4 @@ export const getServerSideProps = async pageContext => {
   };
 };
 
-export default Feed;
+
